@@ -1,10 +1,10 @@
-#####################################
-#			Exercise day 1			#
-#####################################
+####################
+#  Exercise day 1  #
+####################
 
-#-----------------------------------#
-#		Basic shell commands		#
-#-----------------------------------#
+#----------------------#
+# Basic shell commands #
+#----------------------#
 
 #Go to course directory on local computer and create a new directory
 cd ~/Documents/Courses/python_2023/
@@ -21,9 +21,9 @@ mv try_python.py test_python_script.py
 chmod 755 test_python_script.py
 ./test_python_script.py 
 
-#-----------------------------------#
-#			 ssh cluster			#
-#-----------------------------------#
+#-------------#
+# ssh cluster #
+#-------------#
 
 #Log onto cluster, create and add local key to .ssh/authorized_keys repository
 ssh python@davinci.icm.uu.se
@@ -52,9 +52,9 @@ chmod 775 slow_script.py
 cd josefin
 screen -r
 
-#-----------------------------------#
-#		  Working with git	  	    #
-#-----------------------------------#
+#------------------#
+# Working with git #
+#------------------#
 
 #Configure local environment
 git config --global user.name "bjurinformatik"
@@ -79,7 +79,7 @@ git pull
 #Update the remote repository by pushing your local changes
 git push
 
-#---	Branch exercise		---#
+#---	Branch exercise	---#
 
 #Create new branch
 git branch second_branch
@@ -103,7 +103,7 @@ git merge second_branch
 git pull
 git push
 
-#---	Remotes exercise	---#
+#--- Remotes exercise ---#
 
 #Go to clones forkes repository and add url of another repository created on github
 cd ~/Documents/Courses/python_2023/exercises/participants
