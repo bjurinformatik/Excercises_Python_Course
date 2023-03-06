@@ -25,10 +25,18 @@ chmod 755 test_python_script.py
 # ssh cluster #
 #-------------#
 
-#Log onto cluster, create and add local key to .ssh/authorized_keys repository
+#Create ssh key
+ssh-keygen -t rsa -b 4096 -C "josefin.bjurling@igp.uu.se"
+
+#Change name to not overwrite anyones public key
+mv id_rsa.pub id_rsa_josefin.pub
+
+#Add private key to ssh agent
+ssh-add --apple-use-keychain ~/.ssh/id_rsa_josefin
+
+#Add local key to remote system and login
+ssh-copy-id -i ~/.ssh/id_rsa_josefin.pub python@davinci.icm.uu.se
 ssh python@davinci.icm.uu.se
-ssh-keygen
-mv josefin_* .ssh/authorized_keys/
 
 #Make directory to put files in
 mkdir josefin
@@ -79,7 +87,7 @@ git pull
 #Update the remote repository by pushing your local changes
 git push
 
-#--- Branch exercise	---#
+#--- Branch exercise ---#
 
 #Create new branch
 git branch second_branch
