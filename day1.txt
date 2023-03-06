@@ -79,7 +79,7 @@ git pull
 #Update the remote repository by pushing your local changes
 git push
 
-#---	Branch exercise	---#
+#--- Branch exercise	---#
 
 #Create new branch
 git branch second_branch
