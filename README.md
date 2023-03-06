@@ -1,1 +1,1 @@
-# Excercises_Python_Course
+# Repository for excercise solutions
