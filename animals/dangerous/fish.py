@@ -9,4 +9,4 @@ class Fish:
     def printMembers(self):
         print("Printing dangerous fish from the Fish class")
         for member in self.members:
-            print("\t%s", % member)
+            print("\t%s" % member)
