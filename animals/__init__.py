@@ -2,4 +2,5 @@
 
 #Import modules to package
 from .mammals import Mammals
-from .birds import Birds
+from .harmless.birds import Birds
+from dangerous.fish import Fish
